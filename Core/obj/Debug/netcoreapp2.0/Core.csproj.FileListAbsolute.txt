@@ -1,0 +1,8 @@
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\bin\Debug\netcoreapp2.0\Core.deps.json
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\obj\Debug\netcoreapp2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfoInputs.cache
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfo.cs
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\obj\Debug\netcoreapp2.0\Core.dll
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Core\obj\Debug\netcoreapp2.0\Core.pdb
