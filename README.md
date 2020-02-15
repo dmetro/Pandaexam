@@ -1,4 +1,7 @@
 "# StartPoint" 
-npm install at client
-npm run seerve
+<br>
+npm install
+<br>
+npm run serve
+
 "# Pandaexam" 
