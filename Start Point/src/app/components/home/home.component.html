@@ -1,3 +1,39 @@
-﻿<h1>HELLO WORLD</h1>
+﻿<h1>Panda </h1>
 <h2>Message From Server</h2>
-<p *ngFor="let m of result">{{m}}</p>
+<!--<p *ngFor="let m of result">
+    {{m.time}}
+</p>-->
+
+
+<div class="cstm-table-wrp">
+    <div class="inner-scroll-wrp">
+        <table class="table cstm-table">
+            <thead>
+                <tr>
+                    <th scope="col">Asset Name</th>
+                    <th scope="col">DateTime</th>
+                    <th scope="col">Bid Price</th>
+                    <th scope="col">Ask Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let m of result">
+                    <td>
+                        {{m.message}}
+                    </td>
+                    <td>
+                        {{m.time}}
+                    </td>
+                    <td>
+                        {{m.rate1}}
+                    </td>
+                    <td>
+                        {{m.rate1}}
+                    </td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

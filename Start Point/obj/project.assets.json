@@ -5029,9 +5029,24 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "ZeroMQ/4.1.0.31": {
+        "type": "package",
+        "compile": {
+          "lib/net40/ZeroMQ.dll": {}
+        },
+        "runtime": {
+          "lib/net40/ZeroMQ.dll": {}
+        },
+        "build": {
+          "build/net40/_._": {}
+        }
+      },
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "ZeroMQ": "4.1.0.31"
+        },
         "compile": {
           "bin/placeholder/Core.dll": {}
         },
@@ -13637,6 +13652,24 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "ZeroMQ/4.1.0.31": {
+      "sha512": "6yf8yhe78yKoPD/NMQmbWe0Qi3CnP8XuXl4VH2xhYzzfWJ4L5+Ek44bsOnA3c0nmQzXhbzEkxGsGeAQp9cqLlQ==",
+      "type": "package",
+      "path": "zeromq/4.1.0.31",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/amd64/libzmq.dll",
+        "build/amd64/libzmq.dylib",
+        "build/amd64/libzmq.so",
+        "build/i386/libzmq.dll",
+        "build/net40/ZeroMQ.targets",
+        "lib/net40/ZeroMQ.dll",
+        "lib/net40/ZeroMQ.xml",
+        "zeromq.4.1.0.31.nupkg.sha512",
+        "zeromq.nuspec"
+      ]
+    },
     "Core/1.0.0": {
       "type": "project",
       "path": "../Core/Core.csproj",
@@ -13727,5 +13760,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ZeroMQ 4.1.0.31' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ZeroMQ",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

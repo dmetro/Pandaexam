@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="src\app\components\home\data.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="src\app\core\models\" />
     <Folder Include="src\app\core\pipes\" />
     <Folder Include="wwwroot\" />
@@ -25,6 +29,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\components\home\data.ts" />
   </ItemGroup>
 
 </Project>

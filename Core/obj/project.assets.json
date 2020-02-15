@@ -196,6 +196,18 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "ZeroMQ/4.1.0.31": {
+        "type": "package",
+        "compile": {
+          "lib/net40/ZeroMQ.dll": {}
+        },
+        "runtime": {
+          "lib/net40/ZeroMQ.dll": {}
+        },
+        "build": {
+          "build/net40/ZeroMQ.targets": {}
+        }
       }
     }
   },
@@ -668,11 +680,30 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "ZeroMQ/4.1.0.31": {
+      "sha512": "6yf8yhe78yKoPD/NMQmbWe0Qi3CnP8XuXl4VH2xhYzzfWJ4L5+Ek44bsOnA3c0nmQzXhbzEkxGsGeAQp9cqLlQ==",
+      "type": "package",
+      "path": "zeromq/4.1.0.31",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/amd64/libzmq.dll",
+        "build/amd64/libzmq.dylib",
+        "build/amd64/libzmq.so",
+        "build/i386/libzmq.dll",
+        "build/net40/ZeroMQ.targets",
+        "lib/net40/ZeroMQ.dll",
+        "lib/net40/ZeroMQ.xml",
+        "zeromq.4.1.0.31.nupkg.sha512",
+        "zeromq.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "ZeroMQ >= 4.1.0.31"
     ]
   },
   "packageFolders": {
@@ -721,6 +752,10 @@
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "ZeroMQ": {
+            "target": "Package",
+            "version": "[4.1.0.31, )"
           }
         },
         "imports": [
@@ -730,5 +765,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ZeroMQ 4.1.0.31' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ZeroMQ",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

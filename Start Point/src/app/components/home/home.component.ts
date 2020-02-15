@@ -1,6 +1,7 @@
 ﻿import { Component, OnInit } from '@angular/core';
 
 import { HomeService } from "../../core/services/home.service";
+import { data } from './data';
 
 @Component({
     selector: 'home',
@@ -9,10 +10,13 @@ import { HomeService } from "../../core/services/home.service";
 
 export class HomeComponent implements OnInit {
 
-    result: any[] = [];        
+    result: data[];
 
     constructor(private hserv: HomeService) {
-        this.hserv.GetHomeMessage().subscribe(response => this.result = response);
+        this.hserv.get().subscribe((data) => {
+            this.result = data;
+            console.log(" this.result", this.result);
+        });
     }
 
     ngOnInit(): void {

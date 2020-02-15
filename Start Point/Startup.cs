@@ -27,7 +27,6 @@ namespace Start_Point
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<IExChangeService,ExChangeService>();
             services.AddScoped<IExChangeRespository,ExChangeRespository>();
 
 

@@ -1,4 +1,5 @@
 ﻿using Core.Models;
+using Core.Services.ExChange;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,17 +9,10 @@ namespace Core.Repository
 {
     public class ExChangeRespository :IExChangeRespository
     {
+        ExChangeService exChangeService = new ExChangeService();
         public async Task<RepositiryItem> Get()
         {
-            var item = new RepositiryItem
-            {
-                Id = 1,
-                Message = "dima",
-                Rate1 = 7.32,
-                Rate2 = 7.41,
-                Time = DateTime.UtcNow
-            };
-            return item;
+            return exChangeService.getData();
         }
     }
 }

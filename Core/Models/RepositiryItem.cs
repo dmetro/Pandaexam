@@ -9,8 +9,8 @@ namespace Core.Models
         public int Id { get; set; }
         public string Message { get; set; }
         public DateTime Time { get; set; }
-        public double Rate1 { get; set; }
-        public double Rate2 { get; set; }
+        public string Rate1 { get; set; }
+        public string Rate2 { get; set; }
 
 
         protected bool Equals(RepositiryItem other)

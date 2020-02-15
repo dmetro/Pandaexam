@@ -20,10 +20,12 @@ namespace Start_Point.Controllers
         }
 
         [HttpGet]
-        public Task<RepositiryItem> Get()
+        public async Task<List<RepositiryItem>> Get()
         {
-            var res = _exChangeRespository.Get();
-            return res;
+            var res = await _exChangeRespository.Get();
+            var items = new List<RepositiryItem>();
+            items.Add(res);
+            return items;
         }
     }
 }

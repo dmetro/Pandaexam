@@ -9,6 +9,10 @@ C:\Users\Dima\source\repos\Start Point\Start Point\obj\Debug\netcoreapp2.0\Start
 C:\Users\Dima\source\repos\Start Point\Start Point\obj\Debug\netcoreapp2.0\Start Point.AssemblyInfo.cs
 C:\Users\Dima\source\repos\Start Point\Start Point\obj\Debug\netcoreapp2.0\Start Point.dll
 C:\Users\Dima\source\repos\Start Point\Start Point\obj\Debug\netcoreapp2.0\Start Point.pdb
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\amd64\libzmq.dll
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\i386\libzmq.dll
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\amd64\libzmq.so
+C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\amd64\libzmq.dylib
 C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\Start Point.deps.json
 C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\Start Point.runtimeconfig.json
 C:\Users\Dima\Desktop\PandaExamp\StartPoint\Start Point\bin\Debug\netcoreapp2.0\Start Point.runtimeconfig.dev.json
