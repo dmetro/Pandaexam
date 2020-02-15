@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Core.Repository
 {
-    public class ExChangeRespository :IExChangeRespository
+    public class ExChangeRespository : IExChangeRespository
     {
         ExChangeService exChangeService = new ExChangeService();
-        public async Task<RepositiryItem> Get()
+        public async Task<List<RepositiryItem>> Get()
         {
             return exChangeService.getData();
         }

@@ -13,16 +13,18 @@ namespace Core.Services.ExChange
     public class ExChangeService
     {
 
-        public RepositiryItem getData()
+        public List<RepositiryItem> getData()
         {
-            return GetItem();
+            return GetItems();
         }
 
-        private RepositiryItem GetItem()
+        private List<RepositiryItem> GetItems()
         {
-            var res = getMessage();
+            var items = new List<RepositiryItem>();
+            var res = getMessage();///for loop on res
             RepositiryItem item = ParsRes(res);
-            return item;
+            items.Add(item);
+            return items;
         }
 
         public string getMessage()

@@ -8,6 +8,6 @@ namespace Core.Repository
 {
     public interface IExChangeRespository
     {
-        Task<RepositiryItem> Get();
+        Task<List<RepositiryItem>> Get();
     }
 }

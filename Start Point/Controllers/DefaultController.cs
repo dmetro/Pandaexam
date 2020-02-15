@@ -23,9 +23,8 @@ namespace Start_Point.Controllers
         public async Task<List<RepositiryItem>> Get()
         {
             var res = await _exChangeRespository.Get();
-            var items = new List<RepositiryItem>();
-            items.Add(res);
-            return items;
+
+            return res;
         }
     }
 }
